@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.line {
+    flex: 1; 
+    height: 1px; 
+    background-color: #C8C8C8; 
+}
+
+.title {
+    position: relative;
+    background-color: #fff; 
+    padding: 0 10px; 
+    font-size: 20px;
+    color: #FF6B82;
+    font-weight: 600;
+    line-height: 1; 
+    z-index: 1; 
+}
+
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.option:hover {
+    border-color: #FF6B82;
+}
+
+.option-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 25px;
+    gap: 15px; /* Space between radio button and text */
+}
+
+.discount {
+    background-color: #FF6B82;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin: 0 0 0 5px;
+}
+
+.most-popular {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF6B82;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.details {
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    line-height: 24.52px;
+}
+
+.dropdowns {
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 25px;
+    margin-left:30px;
+    align-items: flex-start;
+}
+
+.dropdowns .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdowns select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+}
+
+.free-delivery-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    
+}
+
+.free-delivery {
+    color: #FF6B82;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.total {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #FF6B82;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin:10px 0;
+}
+
+.add-to-cart:hover {
+    background-color: #ff7892;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between radio button and text */
+}
+
+.left-section div > div:first-child {
+    font-size: 16px; 
+    font-weight: 600; 
+    color: #000; 
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+#actual-price {
+    text-decoration: line-through;
+    color: #708090;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+input[type="radio"] {
+    appearance: none; 
+    -webkit-appearance: none; 
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    outline: 0.9px solid #DADADA;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background-color: #FFFFFF; 
+    accent-color: #FF6B82;
+}
+
+input[type="radio"]:hover {
+    outline: 1px solid #FF4A6E; 
+}
+
+/* Checked state */
+input[type="radio"]:checked {
+    background-color: #fff; 
+    outline: 1px solid #FF4A6E; 
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px; 
+    height: 14px;
+    background-color: #FF4A6E; /* Inner circle color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-section input[type="radio"] {
+    margin-right: 15px; 
+}
+
+.row p {
+    font-size: 12px;
+}
+.btn-footer{
+    width: 100%;
+    text-align: right;
+}
+#text-pumper{
+    color: #708090;
+    font-size: 12px;
+}
